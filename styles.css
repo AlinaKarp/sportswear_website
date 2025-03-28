@@ -7,7 +7,6 @@ body {
 }
 
 .container{
-
     margin: 0 auto;
     padding: 0 50px;
 }
@@ -32,55 +31,35 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 14px;
+    font-size: 12px;
     padding: 15px 0px;
 }
 
 .header_list{
     display: flex;
     align-items: center;
-    gap: 150px;
+    gap: 60px;
     border: 1px solid black;
     border-radius: 60px;
-    font-size: 20px;
+    font-size: 16px;
     width: 1050px;
-    height: 50px;
-    padding-left: 30px;
-    margin: 0 50px;
+    height: 40px;
+    padding-left: 20px;
+    margin: 0 110px 10px 40px;
 }
 
 .header_nav{
-    background: #EAEAEA;
     display: flex;
-    padding: 10px 0px;
-}
-
-.header_nav_cloth{
-    display: flex;
-    padding: 10px 0px;
-    gap: 30px;
+    padding: 5px 0px;
     align-items: center;
-}
-
-.lang{
-    font-size: 20px;
-    font-weight: 600;
-    padding-left: 110px;
-}
-
-.cloth_nav{
-    display: flex;
-    gap: 30px;
-    font-size: 20px;
-    font-weight: 500;
-    padding-right: 745px;
+    gap: 10px;
 }
 
 .btn{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
-    background-color: #D8D8D8;
-    border: 1px solid #B4B4B4;
+    background-color: #c4c4c4;
+    border: 1px solid #878787;
     border-radius: 60px;
     width: 120px;
     height: 40px;
@@ -97,3 +76,4 @@ ul {
 .btn:active{
     transform: scale(0.97)
 }
+
