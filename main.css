@@ -104,7 +104,7 @@ h4{
     font-weight: 600;
 }
 
- .inf p{
+.inf p{
     font-size: 18px;
     font-weight: 400;
  }
@@ -113,3 +113,54 @@ h4{
     margin-top: 20px;
     width: 200px;
  }
+
+ .popular{
+   background: #dbdbdb;
+   padding: 20px 0;
+ }
+
+ .tovar{
+   display: block;
+   background: #FEFEFE;
+   box-shadow: 2px 4px 8px rgba(67, 67, 67, 0.2);
+   border-radius: 30px;
+   width: 300px;
+   height: 440px;
+ }
+
+ .populartovar{
+   justify-content: space-between;
+   display: flex;
+ }
+
+ .cena{
+   padding-left: 10px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+.tovar img{
+   width: 300px;
+}
+
+.tovar a{
+   margin: auto;
+}
+
+.cifri{
+   font-size: 20px;
+   padding-right: 5px;
+}
+
+.primeri img{
+   width: 400px;
+   border: 1px solid #878787;
+   box-shadow: 2px 4px 8px rgba(67, 67, 67, 0.4);
+   border-radius: 30px;
+}
+.primeri{
+   display: flex;
+   justify-content: space-between;
+   margin: 20px;
+}
