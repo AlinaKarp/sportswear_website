@@ -1,0 +1,39 @@
+.form_container{
+    margin: 130px auto;
+    width: 1000px;
+    height: 500px;
+    background: #dadada;
+    box-shadow: 2px 4px 8px rgba(84, 84, 84, 0.296);
+    border: 1px solid #bebebe;
+    border-radius: 35px;
+    font-size: 24px;
+}
+
+#text, #phone ,#email{
+    width: 260px;
+    height: 30px;
+    border-radius: 35px;
+    border: 1px solid #bebebe;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 15px;
+}
+
+#message{
+    width: 850px;
+    height: 200px;
+    border-radius: 35px;
+    border: 1px solid #bebebe;
+    font-family: "Montserrat", sans-serif;
+    margin: 15px 70px;
+}
+
+.aboutuser{
+    display: flex;
+    padding-left: 50px;
+    margin: 20px 0;
+}
+
+form .btn{
+    width: 200px;
+    font-family: "Montserrat", sans-serif;
+}

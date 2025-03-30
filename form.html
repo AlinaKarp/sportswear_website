@@ -4,8 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Форма</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./form.css">
 </head>
 <body>
-    
+    <div class="form_container">
+        <form>
+            <div class="aboutuser">
+                <div>
+                    <label for="text">Как вас зовут?</label>
+                    <input type="text" id="text" placeholder="Иванов Иван Иванович">
+                </div>
+                <div>
+                    <label for="phone">Номер телефона</label>
+                    <input type="phone" id="phone" placeholder="+375 XX YYY-YY-YY">
+                </div>
+                <div>
+                    <label for="email">Адрес эл.почты</label>
+                    <input type="email" id="email" placeholder="иван@gmail.com">
+                </div>
+            </div>
+            <div>
+                <label for="message">Ваше сообщение:</label>
+                <textarea name="message" id="message" cols="20" rows="10" placeholder="Меня интересует..."></textarea>
+            </div>
+            <button type="submit" class="btn">Отправить заявку</button>
+        </form>
+    </div>
 </body>
 </html>

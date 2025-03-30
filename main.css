@@ -182,35 +182,3 @@ h4{
    margin-left: 450px;
    width: 400px;
 }
-
-.footer_container {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   flex-wrap: wrap;
-   margin: 10px 30px;
-}
-
-.footer_nav{
-   display: inline-block;
-}
-
-.footer_socials{
-   display: inline-block;
-}
-
-.footer_nav li, 
-.footer_socials li {
-    margin-bottom: 10px;
-}
-
-.footer_socials_icons {
-   display: flex;
-   gap: 15px;
-   margin-top: 10px;
-}
-
-.footer_socials_icons img {
-   width: 24px;
-   height: 24px;
-}
