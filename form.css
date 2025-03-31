@@ -25,6 +25,7 @@
     border: 1px solid #bebebe;
     font-family: "Montserrat", sans-serif;
     margin: 15px 70px;
+    padding-left: 20px;
 }
 
 .aboutuser{
@@ -36,4 +37,9 @@
 form .btn{
     width: 200px;
     font-family: "Montserrat", sans-serif;
+    margin-left: 400px;
+}
+
+.bespokoit label{
+    padding-left: 80px;
 }
