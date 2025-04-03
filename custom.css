@@ -13,5 +13,37 @@ h2{
 .container1{
     display: flex;
     gap: 40px;
-    padding-left: 15px;
+    padding-left: 25px;
 }
+ .box{
+    width: 1300px;
+    height: 370px;
+    margin-left: 70px;
+ }
+
+ .box img{
+    height: 340px;
+    padding-top: 20px;
+ }
+
+ .inf{
+    padding-left: 130px;
+    width: 800px;
+ }
+
+ .standart li{
+    padding-top: 10px;
+ }
+
+ .tovar img{
+    padding-top: 60px;
+ }
+
+ ol .btn{
+    width: 220px;
+    margin-bottom: 10px;
+ }
+
+ .otzivi{
+    background: #dbdbdb;
+ }

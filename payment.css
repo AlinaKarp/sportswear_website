@@ -1,0 +1,23 @@
+h2{
+    background: #dbdbdb;
+    padding: 20px;
+}
+
+.oplata li{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.oplata p{
+    font-size: 17px;
+}
+
+.oplata img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+.sposobi_oplati{
+    display: flex;
+}
