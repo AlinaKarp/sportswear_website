@@ -15,7 +15,6 @@
 
 .inf{
     width: 1000px;
-    
 }
 
 .sposobi img{
@@ -23,4 +22,5 @@
     width: 180px;
     height: 180px;
     align-items: center;
+    box-shadow: 2px 4px 8px rgba(84, 84, 84, 0.578);
 }

@@ -11,6 +11,7 @@ h2{
     width: 200px;
     height: 200px;
     border-radius: 100%;
+    box-shadow: 2px 4px 8px rgba(84, 84, 84, 0.578);
 }
 
 .sposobi{
