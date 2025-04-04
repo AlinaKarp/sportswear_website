@@ -3,11 +3,6 @@ h2{
     padding: 20px;
 }
 
-.oplata li{
-    font-size: 30px;
-    font-weight: 600;
-}
-
 .oplata p{
     font-size: 17px;
 }
@@ -18,6 +13,7 @@ h2{
     border-radius: 100%;
 }
 
-.sposobi_oplati{
+.sposobi{
     display: flex;
+    padding: 40px;
 }

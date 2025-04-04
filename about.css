@@ -1,0 +1,16 @@
+.aboutcompany{
+    display: flex;
+    gap: 100px;
+}
+
+.aboutcompany img{
+   width: 250px;
+   margin-top: 40px;
+   border-radius: 30px;
+   box-shadow: 2px 4px 8px rgba(84, 84, 84, 0.214);
+}
+
+.info{
+    width: 900px;
+    font-size: 16px;
+}

@@ -1,0 +1,26 @@
+.delivery{
+    background: #dbdbdb;
+    padding: 5px 0;
+    margin-bottom: 15px;
+}
+
+.delivery li, .sposobi li{
+    padding: 10px 5px 
+}
+
+.sposobi{
+    display: flex;
+    padding: 20px;
+}
+
+.inf{
+    width: 1000px;
+    
+}
+
+.sposobi img{
+    border-radius: 100%;
+    width: 180px;
+    height: 180px;
+    align-items: center;
+}
