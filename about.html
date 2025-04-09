@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./about.css">
     <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./otzivslide.css">
+    <script src="otzivi.js"></script>
 </head>
 <body>
     <header class="header">
@@ -70,8 +72,62 @@
         </div>
     </div>
     <div class="container">
-        <h2>Профессиональные спортсмены доверяют нам</h2>
-        ...
+        <div class="otzivi">
+        <div class="testimonials-container">
+            <h2>Профессиональные спортсмены доверяют нам</h2>
+            
+            <div class="testimonials-slider">
+                <!-- Отзыв 1 -->
+                <div class="testimonial-card active">
+                    <div class="quote-icon">"</div>
+                    <div class="athlete-name">Иван Марков</div>
+                    <div class="athlete-title">Чемпион мира по гиревому спорту</div>
+                    <p class="testimonial-text">
+                        Качественные материалы, универсальность в выборе дизайна. Отличные плоские швы, выдерживает множество стирок и в целом замечательная одежда.
+                    </p>
+                </div>
+                
+                <!-- Отзыв 2 -->
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <div class="athlete-name">Анна Семёнова</div>
+                    <div class="athlete-title">Мастер спорта по лёгкой атлетике</div>
+                    <p class="testimonial-text">
+                        Одежда идеально подходит для интенсивных тренировок - не стесняет движений, отводит влагу и сохраняет комфорт даже при длительных нагрузках. Рекомендую всем спортсменам!
+                    </p>
+                </div>
+                
+                <!-- Отзыв 3 -->
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <div class="athlete-name">Дмитрий Волков</div>
+                    <div class="athlete-title">Чемпион Европы по кроссфиту</div>
+                    <p class="testimonial-text">
+                        Заказываю экипировку только здесь. Качество на высшем уровне - ни разу не было разрывов или деформации даже после года активного использования. Отличный сервис и быстрая доставка.
+                    </p>
+                </div>
+                
+                <!-- Отзыв 4 -->
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <div class="athlete-name">Екатерина Игнатьева</div>
+                    <div class="athlete-title">Призёр Олимпийских игр по плаванию</div>
+                    <p class="testimonial-text">
+                        Термобельё от этого производителя - лучшее, что я пробовала. Идеально подходит для тренировок в прохладную погоду, сохраняет тепло, но при этом позволяет коже дышать.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="slider-nav">
+                <div class="slider-dot active" data-index="0"></div>
+                <div class="slider-dot" data-index="1"></div>
+                <div class="slider-dot" data-index="2"></div>
+                <div class="slider-dot" data-index="3"></div>
+            </div>
+            
+            <div class="slider-arrow prev">❮</div>
+            <div class="slider-arrow next">❯</div>
+        </div>
     </div>
     <div class="popular">
         <div class="container">
@@ -120,6 +176,7 @@
             </div>
             <img src="img/verh/чтото.png" alt="форма">
         </div>
+    </div>
     </div>
     <div class="container1">
         <h2>Реквизиты</h2>
