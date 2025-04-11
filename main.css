@@ -182,3 +182,13 @@ h4{
    margin-left: 450px;
    width: 400px;
 }
+
+.classiclink{
+   text-decoration: underline;
+   font-style: italic;
+   transition: color 0.3s;
+}
+
+.classiclink:hover{
+   color: #e74c3c;
+}

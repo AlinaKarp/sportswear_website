@@ -1,0 +1,28 @@
+#form, #form2{
+    width: 200px;
+}
+
+h1{
+    font-weight: 500;
+    font-size: 50px;
+    margin-bottom: 140px;
+}
+
+p{
+ display: inline-block;
+}
+
+.ban{
+    display: flex;
+    background: #dbdbdb;
+}
+
+.ban img{
+    width: 400px;
+}
+
+.infban{
+    width: 1000px;
+    padding: 35px;
+}
+

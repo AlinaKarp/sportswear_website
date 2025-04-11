@@ -1,0 +1,255 @@
+        .mark {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        
+        .mark h1 {
+            font-size: 28px;
+            margin-right: 20px;
+            color: #222;
+        }
+        
+        .rating-summary {
+            display: flex;
+            align-items: center;
+        }
+        
+        .average-rating {
+            font-size: 32px;
+            font-weight: bold;
+            color: #e74c3c;
+            margin-right: 10px;
+        }
+        
+        .reviews-count {
+            color: #666;
+            font-size: 16px;
+        }
+        
+        .school-info {
+            margin-left: auto;
+            background: #f0f0f0;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            color: #555;
+        }
+        
+        .reviews-title {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #444;
+        }
+        
+        .reviews-container {
+            margin-top: 30px;
+        }
+        
+        .review {
+            border-bottom: 1px solid #eee;
+            padding: 25px 0;
+        }
+        
+        .review:last-child {
+            border-bottom: none;
+        }
+        
+        .review-rating {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e74c3c;
+            margin-bottom: 10px;
+        }
+        
+        .review-title {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        
+        .review-author {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .author-name {
+            font-weight: bold;
+            margin-right: 15px;
+        }
+        
+        .review-date {
+            color: #888;
+            font-size: 14px;
+        }
+        
+        .review-text {
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 10px;
+        }
+        
+        .review-pros {
+            margin-top: 10px;
+            padding: 10px;
+            background: #f8f8f8;
+            border-radius: 5px;
+        }
+        
+        .pros-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #4CAF50;
+        }
+        
+        .pros-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        
+        .pros-item {
+            background: #e8f5e9;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 14px;
+            color: #2e7d32;
+        }
+        
+        .divider {
+            height: 1px;
+            background: #eee;
+            margin: 20px 0;
+        }
+        
+        .add-review-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        
+        .add-review-btn:hover {
+            background-color: #45a049;
+        }
+        
+        .review-form {
+            display: none;
+            margin-top: 30px;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        
+        .form-group textarea {
+            height: 100px;
+            resize: vertical;
+        }
+        
+        .form-actions {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+        }
+        
+        .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        .cancel-btn {
+            background-color: #f44336;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        .rating-stars {
+            display: flex;
+            gap: 5px;
+            margin-bottom: 10px;
+        }
+        
+        .star {
+            font-size: 24px;
+            color: #ddd;
+            cursor: pointer;
+        }
+        
+        .star.selected {
+            color: #e74c3c;
+        }
+        
+        .pros-checkboxes {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+        }
+        
+        .checkbox-group input {
+            width: auto;
+            margin-right: 8px;
+        }
+        
+        .no-reviews {
+            text-align: center;
+            padding: 30px;
+            color: #777;
+            font-style: italic;
+        }
+        
+        @media (max-width: 600px) {
+            .mark {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .pros-checkboxes {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        

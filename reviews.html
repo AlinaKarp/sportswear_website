@@ -10,6 +10,11 @@
     sizes="32x32"
     href="img/icon.png" />
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./otzivslide.css">
+    <link rel="stylesheet" href="./otzivi.css">
+    <script src="otzivi.js"></script>
+    <script src="reviews.js"></script>
 </head>
 <body>
     <header class="header">
@@ -35,5 +40,183 @@
                     <a href="#!" class="btn">Войти</a>
                     <a href="#!" class="btn">Корзина</a>
         </nav>
+    </header>
+    <div class="container">
+        <div class="otzivi">
+        <div class="testimonials-container">
+            <h2>Профессиональные спортсмены доверяют нам</h2>
+            
+            <div class="testimonials-slider">
+                <!-- Отзыв 1 -->
+                <div class="testimonial-card active">
+                    <div class="quote-icon">"</div>
+                    <div class="athlete-name">Иван Марков</div>
+                    <div class="athlete-title">Чемпион мира по гиревому спорту</div>
+                    <p class="testimonial-text">
+                        Качественные материалы, универсальность в выборе дизайна. Отличные плоские швы, выдерживает множество стирок и в целом замечательная одежда.
+                    </p>
+                </div>
+                
+                <!-- Отзыв 2 -->
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <div class="athlete-name">Анна Семёнова</div>
+                    <div class="athlete-title">Мастер спорта по лёгкой атлетике</div>
+                    <p class="testimonial-text">
+                        Одежда идеально подходит для интенсивных тренировок - не стесняет движений, отводит влагу и сохраняет комфорт даже при длительных нагрузках. Рекомендую всем спортсменам!
+                    </p>
+                </div>
+                
+                <!-- Отзыв 3 -->
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <div class="athlete-name">Дмитрий Волков</div>
+                    <div class="athlete-title">Чемпион Европы по кроссфиту</div>
+                    <p class="testimonial-text">
+                        Заказываю экипировку только здесь. Качество на высшем уровне - ни разу не было разрывов или деформации даже после года активного использования. Отличный сервис и быстрая доставка.
+                    </p>
+                </div>
+                
+                <!-- Отзыв 4 -->
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <div class="athlete-name">Екатерина Игнатьева</div>
+                    <div class="athlete-title">Призёр Олимпийских игр по плаванию</div>
+                    <p class="testimonial-text">
+                        Термобельё от этого производителя - лучшее, что я пробовала. Идеально подходит для тренировок в прохладную погоду, сохраняет тепло, но при этом позволяет коже дышать.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="slider-nav">
+                <div class="slider-dot active" data-index="0"></div>
+                <div class="slider-dot" data-index="1"></div>
+                <div class="slider-dot" data-index="2"></div>
+                <div class="slider-dot" data-index="3"></div>
+            </div>
+            
+            <div class="slider-arrow prev">❮</div>
+            <div class="slider-arrow next">❯</div>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+            <div class="mark">
+                <h1>Отзывы</h1>
+                <div class="rating-summary">
+                    <div class="average-rating" id="averageRating">0,0</div>
+                    <div class="reviews-count" id="reviewsCount">0 отзывов</div>
+                </div>
+            </div>
+            
+            <div class="reviews-container" id="reviewsContainer">
+                <!-- Отзывы будут загружаться здесь -->
+            </div>
+            
+            <button class="add-review-btn" id="addReviewBtn">Добавить отзыв</button>
+            
+            <div class="review-form" id="reviewForm">
+                <h3>Оставить отзыв</h3>
+                <form id="newReviewForm">
+                    <div class="form-group">
+                        <label for="authorName">Ваше имя:</label>
+                        <input type="text" id="authorName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Ваша оценка:</label>
+                        <div class="rating-stars" id="ratingStars">
+                            <span class="star" data-value="1">★</span>
+                            <span class="star" data-value="2">★</span>
+                            <span class="star" data-value="3">★</span>
+                            <span class="star" data-value="4">★</span>
+                            <span class="star" data-value="5">★</span>
+                        </div>
+                        <input type="hidden" id="reviewRating" value="0" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Плюсы продукции (выберите подходящие):</label>
+                        <div class="pros-checkboxes">
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="pros1" value="Качество материалов">
+                                <label for="pros1">Качество материалов</label>
+                            </div>
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="pros2" value="Точность нанесения">
+                                <label for="pros2">Точность нанесения</label>
+                            </div>
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="pros3" value="Удобный сайт">
+                                <label for="pros3">Удобный сайт</label>
+                            </div>
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="pros4" value="Квалифицированные менеджеры">
+                                <label for="pros4">Квалифицированные менеджеры</label>
+                            </div>
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="pros5" value="Качество печати">
+                                <label for="pros5">Качество печати</label>
+                            </div>
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="pros6" value="Соблюдение сроков">
+                                <label for="pros6">Соблюдение сроков</label>
+                            </div>
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="pros7" value="Рекомендации специалистов">
+                                <label for="pros7">Рекомендации специалистов</label>
+                            </div>
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="pros8" value="Широкий ассортимент">
+                                <label for="pros8">Широкий ассортимент</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="reviewText">Текст отзыва:</label>
+                        <textarea id="reviewText" required></textarea>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="button" class="cancel-btn" id="cancelReviewBtn">Отмена</button>
+                        <button type="submit" class="submit-btn">Отправить</button>
+                    </div>
+                </form>
+            </div>
+    <footer>
+        <div class="container">
+            <div class="footer_container">
+                <div class="footer_nav">
+                    <ul>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="delivery.html">Доставка</a></li>
+                        <li><a href="payment.html">Оплата</a></li>
+                        <li><a href="reviews.html">Отзывы</a></li>
+                    </ul>
+                </div>
+                <div class="footer_nav">
+                    <ul>
+                        <li><a href="questions.html">Вопросы</a></li>
+                        <li><a href="custom.html">Форма под заказ</a></li>
+                        <li><a href="wholesale.html">ОПТ</a></li>
+                        <li><a href="razmer.html">Размерная сетка</a></li>
+                    </ul>
+                </div>
+                <div class="footer_socials">
+                    <ul>
+                        <li>+375(29)787-49-04</li>
+                        <li>kka23950@gmail.com</li>
+                        <li><div class="footer_socials_icons">
+                            <img src="img/socials/facebook.png" alt="фэйсбук">
+                            <img src="img/socials/instagram.png" alt="инстаграм">
+                            <img src="img/socials/linkedin.png" alt="linkedin">
+                            <img src="img/socials/twitter.png" alt="твитер">
+                        </div></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
