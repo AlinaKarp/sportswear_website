@@ -47,4 +47,54 @@
     padding-top: 60px;
  }
 
- 
+ @media (min-width: 768px) {
+    .container1 {
+        padding: 10px 30px;
+    }
+    
+    .aboutcompany, 
+    .aboutclothes, 
+    .details {
+        flex-direction: row;
+        gap: 50px;
+    }
+    
+    .detailsinf {
+        width: 60%;
+        padding-left: 20px;
+    }
+    
+    .aboutcompany img {
+        margin-top: 40px;
+    }
+    
+    .info {
+        font-size: 20px;
+    }
+    
+    .aboutclothes img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .tovar img {
+        padding-top: 60px;
+    }
+}
+
+/* Медиа-запросы для десктопов */
+@media (min-width: 1024px) {
+    .container1 {
+        padding: 10px 50px;
+    }
+    
+    .aboutcompany, 
+    .aboutclothes, 
+    .details {
+        gap: 100px;
+    }
+    
+    .detailsinf {
+        padding-left: 30px;
+    }
+}

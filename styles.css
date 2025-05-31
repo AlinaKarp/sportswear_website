@@ -38,14 +38,14 @@ ul {
 .header_list{
     display: flex;
     align-items: center;
-    gap: 60px;
+    justify-content: space-between;
     border: 1px solid black;
     border-radius: 60px;
     font-size: 16px;
     width: 1050px;
     height: 40px;
-    padding-left: 20px;
-    margin: 0 110px 10px 40px;
+    padding: 0 20px;
+    margin: 0 80px 10px 40px;
 }
 
 .header_nav{
@@ -61,7 +61,7 @@ ul {
     background-color: #c4c4c4;
     border: 1px solid #878787;
     border-radius: 60px;
-    width: 120px;
+    width: 140px;
     height: 40px;
     display: flex;
     align-items: center;
@@ -84,7 +84,8 @@ ul {
     flex-wrap: wrap;
     margin: 10px 30px;
  }
- 
+
+
  .footer_nav{
     display: inline-block;
  }
@@ -109,3 +110,78 @@ ul {
     height: 24px;
  }
 
+/* Планшетная версия */
+@media (min-width: 600px) {
+    .container {
+        padding: 0 25px;
+    }
+    
+    .header_contacts_list {
+        flex-direction: row; /* Возвращаем горизонтальное расположение */
+        justify-content: space-between;
+        padding: 12px 0;
+    }
+    
+    .header_nav {
+        flex-direction: row;
+    }
+    
+    .btn {
+        font-size: 17px;
+        width: 130px;
+    }
+    
+    .footer_container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        text-align: left;
+    }
+    
+    .footer_nav, 
+    .footer_socials {
+        width: auto;
+    }
+}
+
+
+/* Десктопная версия */
+@media (min-width: 900px) {
+    .container {
+        padding: 0 50px;
+    }
+    
+    .header_list {
+        display: flex; /* Показываем на десктопах */
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid black;
+        border-radius: 60px;
+        font-size: 16px;
+        width: 100%;
+        max-width: 1050px;
+        height: 40px;
+        padding: 0 20px;
+        margin: 0 auto 10px;
+    }
+    
+    .header_nav {
+        padding: 5px 0;
+    }
+    
+    .btn {
+        font-size: 18px;
+        width: 140px;
+    }
+    
+    .footer_container {
+        margin: 10px 30px;
+    }
+}
+
+/* Большие экраны */
+@media (min-width: 1200px) {
+    .header_list {
+        margin: 0 80px 10px 40px;
+    }
+}

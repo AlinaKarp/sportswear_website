@@ -3,10 +3,14 @@
     display: flex;
     gap: 400px;
     height: 480px;
+    border-radius: 35px;
+    width: 1425px;
+    margin: 50px;
+    box-shadow: 2px 4px 8px rgba(84, 84, 84, 0.296);
 }
 
-.sale .container{
-    margin: 0;
+.sale img{
+   height: 480px;
 }
 
 h1{
@@ -44,7 +48,7 @@ h2{
     border-radius: 30px;
     width: 270px;
     height: 410px;
-    transition: background 0.3s;
+    transition: all 0.3s;
     display: inline-block;
  }
 
@@ -115,13 +119,12 @@ h4{
  }
 
  .popular{
-   background: #dbdbdb;
    padding: 20px 0;
  }
 
  .tovar{
    display: block;
-   background: #FEFEFE;
+   background: #dadada;
    box-shadow: 2px 4px 8px rgba(67, 67, 67, 0.2);
    border-radius: 30px;
    width: 300px;
@@ -175,7 +178,7 @@ h4{
    box-shadow: 2px 4px 8px rgba(67, 67, 67, 0.4);
    border-radius: 30px;
    padding: 20px;
-   margin-bottom: 20px;
+   margin-bottom: 50px;
 }
 
 .vibor a{
@@ -191,4 +194,78 @@ h4{
 
 .classiclink:hover{
    color: #e74c3c;
+}
+
+/* Медиа-запросы для десктопов */
+@media (min-width: 1024px) {
+    .sale {
+        gap: 100px;
+        width: calc(100% - 100px);
+        margin: 50px;
+        border-radius: 35px;
+    }
+    
+    h1 {
+        font-size: 70px;
+    }
+    
+    .tshirt {
+        font-size: 30px;
+        width: 430px;
+    }
+    
+    .sale .btn {
+        width: 400px;
+    }
+    
+    h2 {
+        font-size: 45px;
+    }
+    
+    .card {
+        display: inline-block;
+        margin: 10px;
+    }
+    
+    .box {
+        width: calc(100% - 60px);
+        gap: 80px;
+        border-radius: 35px;
+    }
+    
+    .inf {
+        padding-left: 80px;
+    }
+    
+    .vibor a {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 1440px) {
+    .sale {
+        width: 1425px;
+        height: 480px;
+        gap: 400px;
+    }
+    
+    .sale img {
+        height: 480px;
+        width: auto;
+    }
+    
+    .box {
+        width: 1425px;
+        gap: 130px;
+    }
+    
+    .inf {
+        padding-left: 150px;
+        width: 700px;
+    }
+    
+    .vibor a {
+        margin-left: 450px;
+    }
 }

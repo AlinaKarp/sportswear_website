@@ -12,17 +12,33 @@ p{
  display: inline-block;
 }
 
-.ban{
-    display: flex;
+.sale{
+    gap: 30px;
+}
+
+.sale h1{
+    margin-bottom: 200px;
+}
+
+.ol{
+    color: #e74c3c;
+}
+
+.detailsban{
     background: #dbdbdb;
+    display: flex;
+    height: 480px;
+    border-radius: 35px;
+    width: 1425px;
+    box-shadow: 2px 4px 8px rgba(84, 84, 84, 0.296);
+    margin-bottom: 50px;
 }
 
-.ban img{
-    width: 400px;
+.details{
+    gap: 400px;
 }
 
-.infban{
-    width: 1000px;
-    padding: 35px;
+.detailsban img{
+    margin: 40px 0;
+    height: 400px;
 }
-

@@ -252,4 +252,76 @@
             }
         }
 
-        
+        /* Планшетная версия */
+@media (min-width: 600px) {
+    .mark {
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .mark h1 {
+        font-size: 26px;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+    
+    .rating-summary {
+        margin-bottom: 0;
+    }
+    
+    .school-info {
+        margin-left: auto;
+        margin-top: 0;
+    }
+    
+    .review-author {
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .author-name {
+        margin-right: 15px;
+        margin-bottom: 0;
+    }
+    
+    .pros-checkboxes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .form-actions {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    
+    .submit-btn,
+    .cancel-btn {
+        width: auto;
+    }
+    
+    .add-review-btn {
+        width: auto;
+    }
+}
+
+/* Десктопная версия */
+@media (min-width: 900px) {
+    .mark h1 {
+        font-size: 28px;
+    }
+    
+    .average-rating {
+        font-size: 32px;
+    }
+    
+    .reviews-title {
+        font-size: 20px;
+    }
+    
+    .review-title {
+        font-size: 18px;
+    }
+    
+    .pros-checkboxes {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

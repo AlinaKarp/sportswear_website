@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <style>
+                 .auth-container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: white;
+        }
+        .auth-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .auth-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .auth-form input {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .auth-form button {
+            padding: 10px;
+            background: #e74c3c;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .auth-links {
+            margin-top: 15px;
+            text-align: center;
+        }
+        .error {
+            color: red;
+            margin-top: 10px;
+        }
+    </style>
+    <div class="auth-container">
+        <h2>Вход</h2>
+        <form id="loginForm" class="auth-form">
+            <input type="email" id="loginEmail" placeholder="Email" required>
+            <input type="password" id="loginPassword" placeholder="Пароль" required>
+            <button type="submit">Войти</button>
+        </form>
+        <div id="loginError" class="error"></div>
+        <div class="auth-links">
+            Нет аккаунта? <a href="reg.html">Зарегистрироваться</a>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const email = document.getElementById('loginEmail').value;
+            const password = document.getElementById('loginPassword').value;
+            
+            // Получаем пользователей из localStorage
+            const users = JSON.parse(localStorage.getItem('users')) || [];
+            
+            // Проверяем есть ли пользователь с таким email и паролем
+            const user = users.find(u => u.email === email && u.password === password);
+            
+            if (user) {
+                // Сохраняем текущего пользователя в localStorage
+                localStorage.setItem('currentUser', JSON.stringify(user));
+                
+                // Проверяем, является ли пользователь админом
+                if (email === 'karpala628@gmail.com') {
+                    // Перенаправляем админа на страницу админа
+                    window.location.href = 'admin.html';
+                } else {
+                    // Перенаправляем обычного пользователя в каталог
+                    window.location.href = 'index.html';
+                }
+            } else {
+                document.getElementById('loginError').textContent = 'Неверный email или пароль';
+            }
+        });
+    </script>
+</body>
+</html>

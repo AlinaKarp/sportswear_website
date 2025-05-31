@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+        .auth-container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: white;
+        }
+        .auth-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .auth-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .auth-form input {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .auth-form button {
+            padding: 10px;
+            background: #e74c3c;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .auth-links {
+            margin-top: 15px;
+            text-align: center;
+        }
+        .error {
+            color: red;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="auth-container">
+        <h2>Регистрация</h2>
+        <form id="registerForm" class="auth-form">
+            <input type="email" id="registerEmail" placeholder="Email" required>
+            <input type="password" id="registerPassword" placeholder="Пароль" required>
+            <input type="password" id="registerConfirmPassword" placeholder="Подтвердите пароль" required>
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+        <div id="registerError" class="error"></div>
+        <div class="auth-links">
+            Уже есть аккаунт? <a href="login.html">Войти</a>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('registerForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const email = document.getElementById('registerEmail').value;
+            const password = document.getElementById('registerPassword').value;
+            const confirmPassword = document.getElementById('registerConfirmPassword').value;
+            
+            // Проверяем совпадение паролей
+            if (password !== confirmPassword) {
+                document.getElementById('registerError').textContent = 'Пароли не совпадают';
+                return;
+            }
+            
+            // Получаем пользователей из localStorage
+            const users = JSON.parse(localStorage.getItem('users')) || [];
+            
+            // Проверяем, есть ли уже пользователь с таким email
+            if (users.some(u => u.email === email)) {
+                document.getElementById('registerError').textContent = 'Пользователь с таким email уже существует';
+                return;
+            }
+            
+            // Добавляем нового пользователя
+            users.push({
+                email: email,
+                password: password,
+                role: 'user' // По умолчанию роль 'user'
+            });
+            
+            // Сохраняем в localStorage
+            localStorage.setItem('users', JSON.stringify(users));
+            
+            // Автоматически входим под новым пользователем
+            localStorage.setItem('currentUser', JSON.stringify({
+                email: email,
+                role: 'user'
+            }));
+            
+            // Перенаправляем в каталог
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>

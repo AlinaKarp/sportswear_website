@@ -6,8 +6,8 @@ h2{
     width: 900px;
 }
 
-.poshiv img{
-    width: 200px;
+.container1  img{
+    width: 470px;
 }
 
 .container1{
@@ -15,14 +15,10 @@ h2{
     gap: 40px;
     padding-left: 25px;
 }
- .box{
-    width: 1300px;
-    height: 370px;
-    margin-left: 70px;
- }
+
 
  .box img{
-    height: 340px;
+    height: 320px;
     padding-top: 20px;
  }
 
@@ -47,3 +43,75 @@ h2{
  .otzivi{
     background: #dbdbdb;
  }
+
+ 
+/* Медиа-запросы для планшетов (от 768px) */
+@media (min-width: 768px) {
+    h2 {
+        font-size: 28px;
+    }
+    
+    .container1 {
+        flex-direction: row; /* Возвращаем горизонтальное расположение */
+        gap: 30px;
+        padding-left: 25px;
+    }
+    
+    .inf {
+        padding-left: 50px; /* Уменьшено по сравнению с десктопом */
+        width: 60%;
+    }
+    
+    .box img {
+        height: 250px;
+    }
+    
+    .tovar img {
+        padding-top: 40px;
+    }
+}
+
+/* Медиа-запросы для десктопов (от 1024px) */
+@media (min-width: 1024px) {
+    h2 {
+        font-size: 32px;
+    }
+    
+    .container1 {
+        gap: 40px;
+    }
+    
+    .inf {
+        padding-left: 80px;
+        width: 70%;
+    }
+    
+    .box img {
+        height: 300px;
+    }
+    
+    .tovar img {
+        padding-top: 50px;
+    }
+}
+
+/* Медиа-запросы для больших экранов (от 1440px) */
+@media (min-width: 1440px) {
+    .poshiv {
+        width: 900px;
+    }
+    
+    .inf {
+        padding-left: 130px;
+        width: 800px;
+    }
+    
+    .box img {
+        height: 320px;
+        padding-top: 20px;
+    }
+    
+    .tovar img {
+        padding-top: 60px;
+    }
+}
