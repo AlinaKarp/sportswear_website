@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Проверка авторизации
     const currentUser = JSON.parse(localStorage.getItem('currentUser'));
     if (!currentUser) {
-        window.location.href = 'vhod.html';
+        window.location.href = 'reg.html';
         return;
     }
 
